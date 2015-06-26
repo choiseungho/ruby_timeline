@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get "wall/posts"
   get "wall/edit/:id" => "wall#edit"
   post "wall/edit_complete"
-  post "wall/delete/:id" =>"wall#delete"
+  get "wall/delete/:id" =>"wall#delete"
+  get "wall/delete_complete"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
